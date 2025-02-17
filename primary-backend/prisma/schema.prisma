@@ -51,7 +51,8 @@ model Action {
   zap         Zap              @relation(fields: [zapId], references: [id])
   actionType  String
   type        AvailableActions @relation(fields: [actionType], references: [id])
-  sortedOrder Int              @default(autoincrement())
+  sortedOrder Int              @default(0)
+  metaData    Json             @default("{}")
 }
 
 model AvailableActions {
