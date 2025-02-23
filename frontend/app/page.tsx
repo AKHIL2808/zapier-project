@@ -1,15 +1,8 @@
-import Appbar from "./components/Appbar";
-import BodyContent from "./components/bodyContent/BodyContent";
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <Appbar />
-      </div>
-      <div >
-        <BodyContent />
-      </div>
+      <h1>This is the home page</h1>
     </div>
   );
 }
